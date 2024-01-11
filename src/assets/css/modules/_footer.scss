@@ -1,0 +1,13 @@
+@import 'variables';
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 45px 0 20px 0;
+    margin-top: 50px;
+    color: $white;
+    background: $black;
+}

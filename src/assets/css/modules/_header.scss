@@ -1,0 +1,25 @@
+@import 'variables';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    margin: 45px auto;
+    &__link-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 350px;
+        & a {
+            color: $main-color;
+            text-decoration: none;
+            font-size: 1.4em;
+            font-weight: 600;
+        }
+        & a.active {
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 3px;
+        }
+    }
+}

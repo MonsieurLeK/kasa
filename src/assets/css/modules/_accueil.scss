@@ -1,0 +1,23 @@
+@import 'variables';
+.hero-header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 220px;
+    width: 80vw;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: auto;
+    &__image {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        filter: brightness(0.6);
+    }
+    & h2 {
+        z-index: 1;
+        color: $white;
+        font-size: 3.5rem;
+    }
+}
