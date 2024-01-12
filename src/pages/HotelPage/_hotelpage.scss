@@ -1,0 +1,17 @@
+.caroussel {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80vw;
+    height: 400px;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 25px;
+    &__image {
+        position: absolute;
+        width: 100%;
+        box-sizing: border-box;
+        object-fit: cover;
+    }
+}

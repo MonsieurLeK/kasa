@@ -101,6 +101,25 @@
   font-weight: 400;
 }
 
+.caroussel {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 80vw;
+  height: 400px;
+  overflow: hidden;
+  margin: auto;
+  border-radius: 25px;
+}
+.caroussel__image {
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 body {
   margin: 0;
   font-family: "Montserrat";
