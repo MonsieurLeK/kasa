@@ -1,5 +1,5 @@
-import landscape from '../assets/images/landscape.png'
-import Header from './Header'
+import landscape from '../../assets/images/landscape.png'
+import Header from '../../components/Header/Header'
 
 function About() {
     return     <>

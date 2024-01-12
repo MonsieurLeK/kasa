@@ -1,7 +1,7 @@
-import Header from "./Header"
-import Footer from "./Footer"
-import heroImage from "../assets/images/heroimage.png"
-import Gallery from "./Gallery";
+import Header from "../../components/Header/Header"
+import Footer from "../../components/Footer/Footer"
+import heroImage from "../../assets/images/heroimage.png"
+import Gallery from "../../components/Gallery/Gallery";
 function Accueil () {
     return <>
     <Header />

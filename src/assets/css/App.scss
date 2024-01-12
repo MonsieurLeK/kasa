@@ -1,8 +1,12 @@
-@import 'modules/header', 'modules/variables', 'modules/accueil',
-'modules/footer', 'modules/gallery';
+@import '../../components/Header/header', '../css/variables', '../../pages/Accueil/accueil',
+'../../components/Footer/footer', '../../components/Gallery/gallery';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 body {
     margin: 0;
     font-family: 'Montserrat';
+}
+
+a {
+    text-decoration: none;
 }

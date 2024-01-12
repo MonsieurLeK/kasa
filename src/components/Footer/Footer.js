@@ -1,4 +1,4 @@
-import logoWhite from '../assets/images/logowhite.svg';
+import logoWhite from '../../assets/images/logowhite.svg';
 
 function Footer() {
     return <footer className='footer'>
