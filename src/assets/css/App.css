@@ -61,7 +61,7 @@
 
 .gallery {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   padding: 50px;
   gap: 50px;
   flex-wrap: wrap;
@@ -106,16 +106,18 @@
   flex-wrap: wrap;
   width: 80vw;
   height: 410px;
-  overflow: hidden;
+  overflow: scroll;
   margin: auto;
   border-radius: 25px;
 }
 .caroussel__container {
+  border: 2ps solid blue;
   position: relative;
   overflow: hidden;
 }
 .caroussel__container--image {
-  height: 100%;
+  width: 100%;
+  max-width: 100%;
   box-sizing: border-box;
   -o-object-fit: cover;
      object-fit: cover;
@@ -169,6 +171,88 @@
 }
 .hotelInfos__containerRight--hostContainer p {
   color: #FF6060;
+}
+
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #FF6060;
+  gap: 50px;
+}
+.errorContainer h1 {
+  font-size: 15rem;
+  font-weight: 900;
+  margin: 0;
+}
+.errorContainer a {
+  color: #FF6060;
+  text-decoration: underline;
+}
+
+.aboutMain {
+  width: 80vw;
+  margin: auto;
+}
+.aboutMain__imageContainer {
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.aboutMain__imageContainer img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+.aboutMain__dropDownContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 50px auto;
+  width: 80%;
+}
+
+.collapse {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background: #FF6060;
+  color: #FFFFFF;
+  height: 50px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.content {
+  opacity: 0;
+  margin: 0;
+  margin-bottom: -100px;
+  padding: 20px;
+  color: #FF6060;
+  background: #F0F0F0;
+  border-radius: 0 0 5px 5px;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: all 0.3s ease;
+}
+
+.contentActive {
+  margin-bottom: 0;
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.arrow {
+  transform: rotate(0);
+  transition: transform 0.3s ease;
+}
+
+.arrowDown {
+  transform: rotate(-180deg);
 }
 
 body {

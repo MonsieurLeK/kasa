@@ -44,7 +44,7 @@ function HotelPage() {
         <div className="hotelInfos__containerRight">
             <div className="hotelInfos__containerRight--hostContainer">
                 <p>{hotelFound.host.name}</p>
-                <img src={hotelFound.host.picture} alt="Photo de l'hôte"/>
+                <img src={hotelFound.host.picture} alt="Hôte"/>
             </div>
             <div className="hotelInfos__containerRight--starContainer">
                 {star}

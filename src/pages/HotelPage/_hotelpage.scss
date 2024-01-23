@@ -5,14 +5,16 @@
     flex-wrap: wrap;
     width: 80vw;
     height: 410px;
-    overflow: hidden;
+    overflow: scroll;
     margin: auto;
     border-radius: 25px;
     &__container {
+        border: 2ps solid blue;
         position: relative;
         overflow: hidden;
         &--image {
-            height: 100%;
+            width: 100%;
+            max-width: 100%;
             box-sizing: border-box;
             object-fit: cover;
         }

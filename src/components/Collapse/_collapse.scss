@@ -1,0 +1,39 @@
+@import '../../assets/css/variables';
+
+.collapse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background: $main-color;
+    color: $white;
+    height: 50px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.content {
+    opacity: 0;
+    margin: 0;
+    margin-bottom: -100px;
+    padding: 20px;
+    color: $main-color;
+    background: $light-grey;
+    border-radius: 0 0 5px 5px;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: all 0.3s ease;
+}
+.contentActive {
+    margin-bottom: 0;
+    opacity: 1;
+    transform: scaleY(1);
+}
+.arrow {
+    transform: rotate(0);
+    transition: transform 0.3s ease;
+}
+.arrowDown {
+    transform: rotate(-180deg);
+}
