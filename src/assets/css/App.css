@@ -101,28 +101,6 @@
   font-weight: 400;
 }
 
-.caroussel {
-  display: flex;
-  flex-wrap: wrap;
-  width: 80vw;
-  height: 410px;
-  overflow: scroll;
-  margin: auto;
-  border-radius: 25px;
-}
-.caroussel__container {
-  border: 2ps solid blue;
-  position: relative;
-  overflow: hidden;
-}
-.caroussel__container--image {
-  width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .hotelInfos {
   display: flex;
   width: 80vw;
@@ -173,6 +151,17 @@
   color: #FF6060;
 }
 
+.collapseWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 25px;
+  width: 80vw;
+}
+.collapseWrapper .wrapper {
+  width: 46%;
+}
+
 .errorContainer {
   display: flex;
   flex-direction: column;
@@ -208,7 +197,7 @@
 .aboutMain__dropDownContainer {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 10px;
   margin: 50px auto;
   width: 80%;
 }
@@ -224,13 +213,16 @@
   box-sizing: border-box;
   border: none;
   border-radius: 5px;
+  overflow: hidden;
   cursor: pointer;
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
+  height: 0;
   opacity: 0;
   margin: 0;
-  margin-bottom: -100px;
   padding: 20px;
   color: #FF6060;
   background: #F0F0F0;
@@ -241,9 +233,9 @@
 }
 
 .contentActive {
-  margin-bottom: 0;
   opacity: 1;
   transform: scaleY(1);
+  height: auto;
 }
 
 .arrow {
@@ -253,6 +245,32 @@
 
 .arrowDown {
   transform: rotate(-180deg);
+}
+
+.slideshow {
+  position: relative;
+  width: 80vw;
+  height: 400px;
+  margin: auto;
+  background: black;
+}
+.slideshow__leftArrow {
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  transform: scale(3) rotate(-90deg);
+}
+.slideshow__rightArrow {
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: scale(3) rotate(90deg);
+}
+.slideshow__position {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  color: white;
 }
 
 body {

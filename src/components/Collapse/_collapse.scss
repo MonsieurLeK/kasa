@@ -11,12 +11,15 @@
     box-sizing: border-box;
     border: none;
     border-radius: 5px;
+    overflow: hidden;
     cursor: pointer;
 }
 .content {
+    display: flex;
+    flex-direction: column;
+    height: 0;
     opacity: 0;
     margin: 0;
-    margin-bottom: -100px;
     padding: 20px;
     color: $main-color;
     background: $light-grey;
@@ -26,9 +29,9 @@
     transition: all 0.3s ease;
 }
 .contentActive {
-    margin-bottom: 0;
     opacity: 1;
     transform: scaleY(1);
+    height: auto;
 }
 .arrow {
     transform: rotate(0);

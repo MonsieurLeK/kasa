@@ -1,0 +1,27 @@
+@import '../../assets/css/variables';
+
+.slideshow {
+    position: relative;
+    width: 80vw;
+    height: 400px;
+    margin: auto;
+    background: black;
+    &__leftArrow {
+        position: absolute;
+        top: 50%;
+        left: 25px;
+        transform: scale(3) rotate(-90deg);
+    }
+    &__rightArrow {
+        position: absolute;
+        top: 50%;
+        right: 25px;
+        transform: scale(3) rotate(90deg);
+    }
+    &__position {
+        position: absolute;
+        bottom: 25px;
+        left: 50%;
+        color: white;
+    }
+}

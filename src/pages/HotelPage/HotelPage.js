@@ -4,6 +4,8 @@ import Header from "../../components/Header/Header";
 import hotelList from '../../annonces.json'
 import PageError from '../PageError/PageError'
 import ratingStar from '../../assets/images/icons/Star.svg'
+import Collapse from "../../components/Collapse/Collapse";
+import Slideshow from "../../components/Slideshow/Slideshow";
 
 function HotelPage() {
     let currentLink = useLocation()
@@ -14,25 +16,17 @@ function HotelPage() {
         return obj.id === hotelId
     })
     console.log(hotelFound)
-    //reprendre le système de caroussel pour charger une image à la
-    //fois en se baladant dans la liste des images.
-    const carousselPics = hotelFound.pictures.map((picLink) => 
-        <div className="caroussel__container" key={picLink}>
-        <img src={picLink} alt={picLink.split("project/").pop()} className="caroussel__container--image"/>
-        </div>
-    )
     const hotelTags = hotelFound.tags.map((tag) =>
         <span key={tag}>{tag}</span>
     )
     const star = <img src={ratingStar} alt="étoile"/>
     console.log(hotelFound.rating)
+    console.log(hotelFound.equipments)
 
     if (hotelFound) {
         return<>
     <Header />
-    <section className="caroussel">
-        {carousselPics}
-    </section>
+    <Slideshow />
     <section className="hotelInfos">
         <div className="hotelInfos__containerLeft">
             <h1>{hotelFound.title}</h1>
@@ -50,6 +44,10 @@ function HotelPage() {
                 {star}
             </div>
         </div>
+    </section>
+    <section className="collapseWrapper">
+            <Collapse name="Description" content={hotelFound.description} />
+            <Collapse name="Équipements" content={hotelFound.equipments} />
     </section>
     <Footer />
     </>

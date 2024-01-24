@@ -1,25 +1,6 @@
 @import '../../assets/css/variables';
 
-.caroussel {
-    display: flex;
-    flex-wrap: wrap;
-    width: 80vw;
-    height: 410px;
-    overflow: scroll;
-    margin: auto;
-    border-radius: 25px;
-    &__container {
-        border: 2ps solid blue;
-        position: relative;
-        overflow: hidden;
-        &--image {
-            width: 100%;
-            max-width: 100%;
-            box-sizing: border-box;
-            object-fit: cover;
-        }
-    }
-}
+
 .hotelInfos {
     display: flex;
     width: 80vw;
@@ -67,5 +48,15 @@
                 color: $main-color;
             }
         }
+    }
+}
+.collapseWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 25px;
+    width: 80vw;
+    & .wrapper {
+        width: 46%;
     }
 }
