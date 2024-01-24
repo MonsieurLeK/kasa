@@ -26,7 +26,7 @@ function HotelPage() {
     if (hotelFound) {
         return<>
     <Header />
-    <Slideshow />
+    <Slideshow lenght={hotelFound.pictures.length} content={hotelFound.pictures} />
     <section className="hotelInfos">
         <div className="hotelInfos__containerLeft">
             <h1>{hotelFound.title}</h1>

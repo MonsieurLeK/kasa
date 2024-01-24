@@ -252,17 +252,24 @@
   width: 80vw;
   height: 400px;
   margin: auto;
-  background: black;
+  border-radius: 25px;
+  overflow: hidden;
 }
-.slideshow__leftArrow {
+.slideshow__mainPic {
+  position: absolute;
+  bottom: -25%;
+  width: 100%;
+}
+.slideshow .arrow {
   position: absolute;
   top: 50%;
+  cursor: pointer;
+}
+.slideshow__leftArrow {
   left: 25px;
   transform: scale(3) rotate(-90deg);
 }
 .slideshow__rightArrow {
-  position: absolute;
-  top: 50%;
   right: 25px;
   transform: scale(3) rotate(90deg);
 }
