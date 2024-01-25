@@ -6,6 +6,7 @@ import PageError from '../PageError/PageError'
 import ratingStar from '../../assets/images/icons/Star.svg'
 import Collapse from "../../components/Collapse/Collapse";
 import Slideshow from "../../components/Slideshow/Slideshow";
+import Rating from "../../components/Rating/Rating";
 
 function HotelPage() {
     let currentLink = useLocation()
@@ -41,7 +42,7 @@ function HotelPage() {
                 <img src={hotelFound.host.picture} alt="Hôte"/>
             </div>
             <div className="hotelInfos__containerRight--starContainer">
-                {star}
+                <Rating rating={hotelFound.rating} />
             </div>
         </div>
     </section>

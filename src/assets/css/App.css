@@ -148,6 +148,7 @@
   border-radius: 50%;
 }
 .hotelInfos__containerRight--hostContainer p {
+  font-size: 1.2rem;
   color: #FF6060;
 }
 
@@ -278,6 +279,23 @@
   bottom: 25px;
   left: 50%;
   color: white;
+}
+
+.rating {
+  display: flex;
+  margin-top: 10px;
+  padding: 5px;
+  gap: 10px;
+}
+.rating .star {
+  scale: 1.4;
+}
+.rating .greyStar {
+  filter: invert(100%) sepia(100%) saturate(35%) hue-rotate(178deg) brightness(140%) contrast(88%);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

@@ -2,8 +2,12 @@
 '../../components/Footer/footer', '../../components/Gallery/gallery',
  "../../pages/HotelPage/hotelpage", "../../pages/PageError/pageError",
  "../../pages/About/about", "../../components/Collapse/collapse", 
- "../../components/Slideshow/slideshow";
+ "../../components/Slideshow/slideshow", "../../components/Rating/rating";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     margin: 0;
