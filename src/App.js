@@ -12,6 +12,11 @@ const router = createBrowserRouter([
     errorElement: <PageError/>
   },
   {
+    path: '/kasa',
+    element: <Accueil/>,
+    errorElement: <PageError/>
+  },
+  {
     path: '/:id',
     element: <HotelPage />,
     errorElement: <PageError/>

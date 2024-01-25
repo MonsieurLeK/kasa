@@ -21,7 +21,7 @@
     opacity: 0;
     margin: 0;
     padding: 20px;
-    color: $main-color;
+    color: $black;
     background: $light-grey;
     border-radius: 0 0 5px 5px;
     transform: scaleY(0);
@@ -29,9 +29,15 @@
     transition: all 0.3s ease;
 }
 .contentActive {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
     opacity: 1;
     transform: scaleY(1);
     height: auto;
+    & span {
+        display: block;
+    }
 }
 .arrow {
     transform: rotate(0);

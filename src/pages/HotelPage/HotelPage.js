@@ -3,7 +3,6 @@ import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 import hotelList from '../../annonces.json'
 import PageError from '../PageError/PageError'
-import ratingStar from '../../assets/images/icons/Star.svg'
 import Collapse from "../../components/Collapse/Collapse";
 import Slideshow from "../../components/Slideshow/Slideshow";
 import Rating from "../../components/Rating/Rating";
@@ -16,13 +15,15 @@ function HotelPage() {
     const hotelFound = hotelList.find( obj => {
         return obj.id === hotelId
     })
-    console.log(hotelFound)
     const hotelTags = hotelFound.tags.map((tag) =>
         <span key={tag}>{tag}</span>
     )
-    const star = <img src={ratingStar} alt="étoile"/>
-    console.log(hotelFound.rating)
     console.log(hotelFound.equipments)
+    let equipmentList = hotelFound.equipments.map((equipment) => {
+        return <span>{equipment}</span>
+    })
+    
+    
 
     if (hotelFound) {
         return<>
@@ -48,7 +49,7 @@ function HotelPage() {
     </section>
     <section className="collapseWrapper">
             <Collapse name="Description" content={hotelFound.description} />
-            <Collapse name="Équipements" content={hotelFound.equipments} />
+            <Collapse name="Équipements" content={equipmentList} />
     </section>
     <Footer />
     </>
