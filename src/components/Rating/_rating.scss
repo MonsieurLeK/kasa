@@ -12,3 +12,12 @@
         filter: invert(100%) sepia(100%) saturate(35%) hue-rotate(178deg) brightness(140%) contrast(88%);
     }
 }
+
+@media screen and (max-width: 600px) {
+    .rating {
+        gap: 5px;
+        & .star {
+            scale: 1;
+        }
+    }
+}

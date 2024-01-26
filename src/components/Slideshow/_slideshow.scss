@@ -9,8 +9,9 @@
     overflow: hidden;
     &__mainPic {
         position: absolute;
-        bottom: -25%;
+        bottom: 0;
         width: 100%;
+        object-fit: cover;
     }
     & .arrow {
         position: absolute;
@@ -30,5 +31,25 @@
         bottom: 25px;
         left: 50%;
         color: white;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .slideshow {
+        height: 300px;
+        &__mainPic {
+            bottom: 0;
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    .slideshow {
+        width: 90vw;
+        height: 220px;
+        border-radius: 10px;
+        &__mainPic {
+            height: 100%;
+            object-fit: cover;
+        }
     }
 }

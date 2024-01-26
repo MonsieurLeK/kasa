@@ -39,3 +39,16 @@
         }
     }
 }
+@media screen and (max-width: 600px) {
+    .gallery {
+        margin-top: 30px;
+        padding: 0;
+        width: 90vw;
+        background: none;
+        gap: 20px;
+        &__card {
+            width: 335px;
+            height: 255px;
+        }
+    }
+}

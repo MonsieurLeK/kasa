@@ -6,6 +6,9 @@
     align-items: center;
     color: $main-color;
     gap: 50px;
+    padding: 0 20px;
+    width: 80vw;
+    margin: auto;
     & h1 {
         font-size: 15rem;
         font-weight: 900;
@@ -14,5 +17,17 @@
     & a {
         color: $main-color;
         text-decoration: underline;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .errorContainer {
+        width: 90vw;
+        & h1 {
+            font-size: 8rem;
+        }
+        & h2 {
+            font-size: 0.8rem;
+        }
     }
 }

@@ -1,5 +1,6 @@
 @import '../../assets/css/variables';
 
+
 .collapse {
     display: flex;
     justify-content: space-between;
@@ -45,4 +46,17 @@
 }
 .arrowDown {
     transform: rotate(-180deg);
+}
+
+@media screen and (max-width: 600px) {
+    .collapse {
+        font-size: 0.6rem;
+        height: 30px;
+    }
+    .content {
+        font-size: 0.8rem;
+    }
+    .arrow {
+        scale: 0.8;
+    }
 }

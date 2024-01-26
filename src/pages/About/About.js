@@ -1,4 +1,4 @@
-import landscape from '../../assets/images/landscape.png'
+import landscape from '../../assets/images/landscape.jpg'
 import Header from '../../components/Header/Header'
 import Footer from '../../components/Footer/Footer'
 import Collapse from '../../components/Collapse/Collapse'

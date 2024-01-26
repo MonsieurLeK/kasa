@@ -24,3 +24,18 @@
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .header {
+        width: 90vw;
+        & img {
+            width: 145px;
+        }
+        &__link-container {
+            gap: 25px;
+            & a {
+                font-size: 1em;
+            }
+        }
+    }
+}

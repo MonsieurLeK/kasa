@@ -20,7 +20,7 @@ function HotelPage() {
     )
     console.log(hotelFound.equipments)
     let equipmentList = hotelFound.equipments.map((equipment) => {
-        return <span>{equipment}</span>
+        return <span key={equipment}>{equipment}</span>
     })
     
     
