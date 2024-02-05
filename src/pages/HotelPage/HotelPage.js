@@ -15,11 +15,11 @@ function HotelPage() {
     const hotelFound = hotelList.find( obj => {
         return obj.id === hotelId
     })
-    const hotelTags = hotelFound.tags.map((tag) =>
+    const hotelTags = hotelFound?.tags.map((tag) =>
         <span key={tag}>{tag}</span>
     )
-    console.log(hotelFound.equipments)
-    let equipmentList = hotelFound.equipments.map((equipment) => {
+    console.log(hotelFound?.equipments)
+    let equipmentList = hotelFound?.equipments.map((equipment) => {
         return <span key={equipment}>{equipment}</span>
     })
     
