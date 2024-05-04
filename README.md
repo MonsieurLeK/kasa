@@ -16,3 +16,5 @@ Compétences développées:
 ----------------------
 
 Lien du site en live: https://monsieurlek.github.io/kasa/
+
+Lien vers la maquette: https://www.figma.com/file/qEno0LwL4ZLkWyeY59kxp1/Kasa-FR-(Archived-2)?type=design&node-id=0-1&mode=design&t=D85me58eavQDYBoa-0
